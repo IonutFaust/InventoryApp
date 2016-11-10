@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Item Name"
+            />
+        <TextView
+            android:id="@+id/sales_to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sales To Date: 50"
+            android:layout_below="@+id/product_name"/>
+        <TextView
+            android:id="@+id/current_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Current Qty: 250"
+            android:layout_below="@+id/sales_to_date"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Price: £50:00"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/sale_button"
+            android:text = "Sale"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
